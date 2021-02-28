@@ -33,8 +33,8 @@ public class BankAccount {
         System.out.println("Сумма после снятия = " + balance);
     }
 
-    class BankAccountTest {
-        public void main(String[] args) {
+    static class BankAccountTest {
+        public static void main(String[] args) {
             BankAccount MyAccount = new BankAccount();
 
             MyAccount.popolnenieScheta(20.2);
