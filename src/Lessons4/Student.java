@@ -23,6 +23,13 @@ public class Student {
 
 
 class StudentTest {
+
+    double avr_aval(Student st) {
+        double avr_evaluations = (st.avr_econ + st.avr_language + st.avr_math) / 3;
+        System.out.println("Средняя оценка студента " + st.name + " " + st.lastname + " - " + avr_evaluations);
+        return avr_evaluations;
+    }
+
     public static void main(String[] args) {
         Student Michael = new Student();
 
@@ -34,11 +41,13 @@ class StudentTest {
         Michael.avr_econ = 3.7;
         Michael.avr_language = 4.3;
 
+    /*
         System.out.println("student_id - " + Michael.student_id);
         System.out.println("name - " + Michael.name);
         System.out.println("lastname - " + Michael.lastname);
         System.out.println("year - " + Michael.year);
         System.out.println("avr_evaluations - " + (Michael.avr_math + Michael.avr_language + Michael.avr_econ) / 3);
+    */
 
 
         Student Vera = new Student();
@@ -50,12 +59,14 @@ class StudentTest {
         Vera.avr_econ = 4.7;
         Vera.avr_language = 4.3;
 
+    /*
         System.out.println();
         System.out.println("student_id - " + Vera.student_id);
         System.out.println("name - " + Vera.name);
         System.out.println("lastname - " + Vera.lastname);
         System.out.println("year - " + Vera.year);
         System.out.println("avr_evaluations - " + (Vera.avr_math + Vera.avr_language + Vera.avr_econ) / 3);
+    */
 
         Student Nick = new Student();
         Nick.student_id = "st_2";
@@ -65,13 +76,20 @@ class StudentTest {
         Nick.avr_math = 4.8;
         Nick.avr_econ = 4.5;
         Nick.avr_language = 4.9;
-
+    /*
         System.out.println();
         System.out.println("student_id - " + Nick.student_id);
         System.out.println("name - " + Nick.name);
         System.out.println("lastname - " + Nick.lastname);
         System.out.println("year - " + Nick.year);
         System.out.println("avr_evaluations - " + (Nick.avr_math + Nick.avr_language + Nick.avr_econ) / 3);
+    */
+
+        StudentTest sTest = new StudentTest();
+        sTest.avr_aval(Michael);
+        sTest.avr_aval(Vera);
+        sTest.avr_aval(Nick);
     }
+
 
 }
