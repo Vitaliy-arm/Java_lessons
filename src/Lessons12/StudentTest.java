@@ -21,11 +21,28 @@ public class StudentTest {
 
     }
 
+    public static void method2(Student st1, Student st2){
+        if (st1.name.equals(st2.name)){
+                if (st1.course == st2.course){
+                        if (st1.grade == st2.grade) {
+                            System.out.println("Students are the same");
+                        } else {
+                            System.out.println("Student grade are different");
+                        }
+                } else {
+                    System.out.println("Student course are different");
+                }
+        } else {
+            System.out.println("Student name are different");
+        }
+    }
+
     public static void main(String[] args){
-        Student st1 = new Student("Taras", 4, 5.3);
-        Student st2 = new Student("Kirylo", 1, 4.3);
+        Student st1 = new Student("Taras", 1, 5.3);
+        Student st2 = new Student("Kirylo", 4, 4.3);
 
         method1(st1, st2);
+        method2(st1, st2);
     }
 
 
