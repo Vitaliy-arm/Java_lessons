@@ -27,7 +27,7 @@ public class Month {
                break;
 
            case 2:
-               System.out.println("Month " + a + " has 30 days.");
+               System.out.println("Month " + a + " has 28 days.");
                break;
 
            default:
