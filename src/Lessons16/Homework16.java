@@ -26,11 +26,11 @@ public class Homework16 {
 
         for(i=0; i < list.length(); i++){
             a = list.charAt(i);
-            if(a != ';' && a != ' ' && a != '.' && a == '@'){
+            if(a == '@' || a == '.'){
                 System.out.println();
-                continue;
-            } else {
+            }
 
+            else if (a != '.' && a != ';' && a != ' '){
                 System.out.print(a);
             }
 
