@@ -19,22 +19,17 @@ public class Homework16 {
         email("ya@yahoo.com; on@mail.ru; ona@gmail.com;");
     }
 
-    private static void email(String s) {
+    public static void email(String s) {
         String list = s;
-        char a;
-        int i;
+        int a = 0; // position @
+        int b = 0; // position .
+        int i = 0; // position ;
 
-        for(i=0; i < list.length(); i++){
-            a = list.charAt(i);
-            if(a == '@' || a == '.'){
-                System.out.println();
-            }
-
-            else if (a != '.' && a != ';' && a != ' '){
-                System.out.print(a);
-            }
-
+        while(i < list.length() - 1){
+            a = list.indexOf('@', i);
+            b = list.indexOf('.', i);
+            i = list.indexOf(';', i + 1);
+            System.out.println(list.substring(a + 1, b));
         }
-        System.out.println();
     }
 }
