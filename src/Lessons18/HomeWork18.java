@@ -6,6 +6,7 @@ package Lessons18;
 //возвращать true, если значения объектов совпадают, false –
 //если не совпадают.
 //Продемонстрируйте данный метод.
+//
 
 public class HomeWork18 {
     public static boolean ravenstvo(StringBuilder sb1, StringBuilder sb2) {
@@ -22,8 +23,8 @@ public class HomeWork18 {
     }
 
     public static void main(String[] args) {
-        StringBuilder sb1 = new StringBuilder("Hello7");
-        StringBuilder sb2 = new StringBuilder("hello");
+        StringBuilder sb1 = new StringBuilder("Hello");
+        StringBuilder sb2 = new StringBuilder("Hello");
         if (ravenstvo(sb1, sb2) == true){
             System.out.println("sb1 = sb2");
         } else {
