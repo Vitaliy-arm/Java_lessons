@@ -17,8 +17,9 @@ public class Home_work19_1 {
         //System.out.println(Arrays.toString(array));
 
         for (int i = 0; i < array.length; i++){
+            int min = array[i];
             for (int c = 0; c < array.length; c++) {
-                int min = array[i];
+
                 if (array[c] > min) {
                     min = array[c];
                     int change = array[i];
