@@ -10,26 +10,24 @@ import java.util.Arrays;
 
 public class Home_work19_1 {
     public static void sortirovka (int [] array){
-        int min = array[0];
+
+
 
         //Arrays.sort(array);
         //System.out.println(Arrays.toString(array));
 
         for (int i = 0; i < array.length; i++){
-            if (array[i] < min){
-                min = array[i];
-                array[0] = array[i]; // TO DO
-                array[0] = min;
+            for (int c = 0; c < array.length; c++) {
+                int min = array[i];
+                if (array[c] > min) {
+                    min = array[c];
+                    int change = array[i];
+                    array[c] = change;
+                    array[i] = min;
+                }
             }
         }
 
-
-        // TO DO
-        for (int i = 1; i < array.length; i++){
-            if (min >= array[i]){
-                array[i] = array[i+1];
-            }
-        }
 
         System.out.println(Arrays.toString(array));
     }
