@@ -11,8 +11,8 @@ import java.util.Arrays;
 public class Home_work19_1 {
     public static void sortirovka (int [] array){
 
-        //Arrays.sort(array);
-        //System.out.println(Arrays.toString(array));
+        // Arrays.sort(array);
+        // System.out.println(Arrays.toString(array));
 
         for (int i = 0; i < array.length; i++){
             int min = array[i];
